@@ -1,0 +1,19 @@
+
+.article{
+    grid-area: art;
+    text-align: center;
+    background: #eaeeee;
+    display:flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    
+
+}
+.article_image{
+    width:60%;
+    padding: 10px;
+    
+}
+

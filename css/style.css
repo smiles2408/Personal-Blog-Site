@@ -1,0 +1,111 @@
+
+@import "article_main.css";
+@import "card.css";
+@import "footer.css";
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows:auto;
+    grid-template-areas: 
+    "hd hd"
+    "art art"
+    "sect sect"
+    "ft ft";
+    border: 2px solid grey;
+    font-family: 'Ubuntu', sans-serif;
+    color:rgba(18, 37, 59, 0.918);
+    
+    
+}   
+h4,
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+.box{
+    border: 1px solid rgb(220, 224, 220);
+    background:rgba(206, 207, 193, 0.185);
+   
+}
+.header{
+    grid-area: hd;
+    text-align:center;
+    padding-top: 50px;
+    background: #9fb4cc;
+    margin-top: 10px;
+   
+}
+
+.section{
+    grid-area: sect;
+    background: #9fb4cc;
+    padding-top: 50px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+.section_image{
+    width:50%;
+    
+}
+
+.author_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.author_image{
+    width:15%;
+    height:15%;
+    border-radius: 50%;
+}
+.author_box_title{
+    padding:10px ;
+    
+}
+
+/* Small Screens */
+@media (max-width: 600px){
+    .container {
+        display: grid;   
+        grid-template-columns: 1fr ;
+        grid-auto-rows:auto;
+      
+    } 
+}
+
+
+/* Medium Screens */
+@media (min-width: 601px) and (max-width:900px) {
+    .container {
+        display: grid;   
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows:auto;
+        border: 2px solid grey;
+        font-size: 15px;    
+    }   
+  }
+  
+  /*Large Screens */
+@media (min-width: 901px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows:auto;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd"
+        "art art art art art art art art"
+        "sect sect sect sect sect sect sect sect"
+        "ft ft ft ft ft ft ft ft";
+        border: 2px solid grey;
+        font-size: 15px;
+    }
+}

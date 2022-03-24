@@ -1,0 +1,30 @@
+
+@import "style.css";
+
+ #blog_figure{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+
+ }
+#blog_image{
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(223, 100, 100, 0.2);
+    transition: 0.3s;
+    width:50%;
+    padding:20px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  #blog_image:hover {
+    box-shadow: 8px 8px 8px 8px rgba(199, 36, 36, 0.2);
+  }
+
+  #blog_image_caption{
+      font-size: 20px;
+      color:crimson;
+      margin: 50px;
+  }
+  #blog_list_item{
+      text-align: left;
+  }
